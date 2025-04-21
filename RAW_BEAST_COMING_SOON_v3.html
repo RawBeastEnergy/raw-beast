@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAW BEAST – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Barlow Condensed', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/black-marble.png'), #0a0a0a;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #f8f8f8;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 2rem 3rem;
+      animation: fadeInDown 1.2s ease;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 2rem;
+      animation: zoomIn 1.5s ease;
+    }
+    header h1 {
+      font-size: 4rem;
+      color: #ffc400;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      animation: pulse 2s infinite;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #ccc;
+      margin-top: 1rem;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .coming-soon {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 2.2rem;
+      color: #fff;
+      animation: fadeInUp 2s ease;
+    }
+
+    .newsletter {
+      text-align: center;
+      margin: 4rem auto;
+      animation: fadeIn 2s ease;
+    }
+    .newsletter input[type="email"] {
+      padding: 1rem;
+      width: 260px;
+      border-radius: 8px;
+      border: none;
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    .newsletter button {
+      padding: 1rem 2rem;
+      background: #ffc400;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .newsletter button:hover {
+      background: #fff000;
+    }
+
+    .socials {
+      text-align: center;
+      margin: 3rem 0;
+      font-size: 1.5rem;
+    }
+    .socials i {
+      margin: 0 10px;
+      color: #ffc400;
+      cursor: not-allowed;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem;
+      color: #777;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="RAW BEAST Logo">
+    <h1>COMING SOON</h1>
+    <p>Bereit für das BEAST?</p>
+  </header>
+
+  <div class="coming-soon">
+    <p>Die Energy-Revolution startet bald.</p>
+  </div>
+
+  <div class="newsletter">
+    <form action="mailto:info@rawbeast.de" method="POST" enctype="text/plain">
+      <input type="email" name="email" placeholder="Trag dich ein für Updates" required />
+      <button type="submit">Benachrichtige mich</button>
+    </form>
+  </div>
+
+  <div class="socials">
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-tiktok"></i>
+    <i class="fab fa-youtube"></i>
+  </div>
+
+  <footer>
+    &copy; 2025 RAW BEAST – Designed by RAW BEAST Energy
+  </footer>
+
+</body>
+</html>
