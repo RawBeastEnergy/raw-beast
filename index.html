@@ -1,26 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RAW BEAST – COMING SOON</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAW BEAST – Die Energy-Revolution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(160deg, #0a0a0a 0%, #1b1b1b 100%);
+      color: #f8f8f8;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      background: radial-gradient(circle, #111 20%, #000 100%);
+      border-bottom: 3px solid #ffc400;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #ffc400;
+      letter-spacing: 4px;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin-top: 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+      gap: 3rem;
+      animation: fadeInUp 1.5s ease;
+    }
+    .hero img {
+      width: 320px;
+      border-radius: 25px;
+      box-shadow: 0 0 40px rgba(255, 196, 0, 0.4);
+    }
+    .text-content {
+      max-width: 600px;
+    }
+    .text-content h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .text-content p {
+      font-size: 1.1rem;
+      color: #bbb;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem auto 5rem;
+    }
+    .cta button {
+      background-color: #ffc400;
+      color: #000;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 196, 0, 0.4);
+    }
+    .cta button:hover {
+      background-color: #fff000;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .text-content h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="headline">RAW BEAST</h1>
-        <div class="can-wrapper">
-            <img src="RAW BEAST KOKOS CITRUS.png" alt="RAW BEAST Dose" class="can" />
-        </div>
-        <h2 class="coming-soon">COMING SOON</h2>
-        <p class="tagline">„Bereit für das Beast?“</p>
-        <p class="description">20g Protein – 200mg Koffein – 100% Geschmack</p>
-        <input type="email" placeholder="Deine E-Mail (bald verfügbar)" class="newsletter" disabled />
-        <div class="socials">
-            <span>🔗</span> <span>📸</span> <span>🎵</span>
-        </div>
+  <header>
+    <h1>RAW BEAST</h1>
+    <p>Die ultimative Kombination aus Power, Geschmack & Fokus – für echte Lifter gemacht.</p>
+  </header>
+
+  <section class="hero">
+    <img src="RAW BEAST KOKOS CITRUS.png" alt="RAW BEAST Energy Drink" />
+    <div class="text-content">
+      <h2>PROTEIN. KOFFEIN. UNLEASH THE BEAST.</h2>
+      <p>
+        RAW BEAST ist kein 0815-Energy. 20g hochwertiges Protein und 200mg Koffein pro Dose pushen dich über deine Limits hinaus. Fruchtig. Brutal. Effektiv.
+      </p>
+      <p>
+        Geschmack: **Kokos-Zitrus** – erfrischend anders, kompromisslos hart.
+        Entwickelt für Athleten, die mehr erwarten. Für dich.
+      </p>
     </div>
+  </section>
+
+  <div class="cta">
+    <button>Jetzt vorbestellen</button>
+  </div>
+
+  <footer>
+    &copy; 2025 RAW BEAST. All rights reserved. Made for the gym – not for the weak.
+  </footer>
 </body>
 </html>
