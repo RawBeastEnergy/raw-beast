@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAW BEAST</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0f0f0f;
+      color: #fff;
+      font-family: 'Arial Black', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 4rem;
+      color: #f1c40f;
+      margin-top: 2rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .can-container {
+      margin-top: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .can-container:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: 1;
+    }
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .description {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ccc;
+    }
+    .highlight {
+      color: #f1c40f;
+    }
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #f1c40f;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>RAW BEAST</h1>
+  <div class="can-container">
+    <img src="RAW_BEAST_KOKOS_CITRUS.png" alt="RAW BEAST Can" width="300">
+  </div>
+  <div class="description">
+    THE ENERGY DRINK FOR LIFTERS<br>
+    <span class="highlight">20g PROTEIN</span> – <span class="highlight">200mg CAFFEINE</span> – <span class="highlight">500ml</span>
+  </div>
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+  </div>
+  <footer>
+    &copy; 2025 RAW BEAST. All rights reserved.
+  </footer>
+</body>
+</html>
