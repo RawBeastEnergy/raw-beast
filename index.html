@@ -1,105 +1,102 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAW BEAST – Die Energy-Revolution</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAW BEAST – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
     body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(160deg, #0a0a0a 0%, #1b1b1b 100%);
-      color: #f8f8f8;
-      line-height: 1.6;
+      font-family: 'Rajdhani', sans-serif;
+      background: url('https://www.toptal.com/designers/subtlepatterns/uploads/marble.png') repeat;
+      color: #f1f1f1;
       overflow-x: hidden;
     }
     header {
       text-align: center;
-      padding: 5rem 2rem 3rem;
-      background: radial-gradient(circle, #111 20%, #000 100%);
-      border-bottom: 3px solid #ffc400;
+      padding: 4rem 2rem 2rem;
     }
-    header h1 {
-      font-size: 3.5rem;
+    header img {
+      max-width: 200px;
+    }
+    h1 {
+      font-size: 4rem;
       color: #ffc400;
-      letter-spacing: 4px;
-    }
-    header p {
-      font-size: 1.3rem;
-      color: #ccc;
+      text-shadow: 2px 2px 10px black;
       margin-top: 1rem;
     }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 5rem 2rem;
-      gap: 3rem;
-      animation: fadeInUp 1.5s ease;
+    .subline {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #ccc;
     }
-    .hero img {
-      width: 320px;
-      border-radius: 25px;
-      box-shadow: 0 0 40px rgba(255, 196, 0, 0.4);
+    .scroll-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      animation: fadeInUp 2s ease-in-out;
     }
-    .text-content {
-      max-width: 600px;
-    }
-    .text-content h2 {
-      font-size: 2.8rem;
+    .scroll-section h2 {
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #fff;
     }
-    .text-content p {
-      font-size: 1.1rem;
-      color: #bbb;
+    .newsletter {
+      margin-top: 2rem;
     }
-    .cta {
-      text-align: center;
-      margin: 3rem auto 5rem;
-    }
-    .cta button {
-      background-color: #ffc400;
-      color: #000;
+    input[type="email"] {
+      padding: 0.8rem;
+      width: 250px;
       border: none;
-      padding: 1rem 2.5rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 20px rgba(255, 196, 0, 0.4);
+      border-radius: 8px;
+      margin-right: 0.5rem;
     }
-    .cta button:hover {
-      background-color: #fff000;
-      transform: scale(1.05);
+    button {
+      padding: 0.8rem 1.5rem;
+      background: #ffc400;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #e0b100;
+    }
+    .social-icons {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+    .social-icons i {
+      margin: 0 1rem;
+      color: #aaa;
+      transition: color 0.3s;
+    }
+    .social-icons i:hover {
+      color: #ffc400;
     }
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #333;
+      color: #888;
     }
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(50px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    @media screen and (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-      }
-      header h1 {
+    @media (max-width: 768px) {
+      h1 {
         font-size: 2.5rem;
       }
-      .text-content h2 {
+      .scroll-section h2 {
         font-size: 2rem;
       }
     }
@@ -107,108 +104,26 @@
 </head>
 <body>
   <header>
-    <h1>RAW BEAST</h1>
-    <p>Die ultimative Kombination aus Power, Geschmack & Fokus – für echte Lifter gemacht.</p>
+    <img src="assets/logo.png" alt="RAW BEAST Logo" />
+    <h1>COMING SOON</h1>
+    <p class="subline">Bereit für das BEAST?</p>
   </header>
 
-  <section class="hero">
-    <img src="RAW BEAST KOKOS CITRUS.png" alt="RAW BEAST Energy Drink" />
-    <div class="text-content">
-      <h2>PROTEIN. KOFFEIN. UNLEASH THE BEAST.</h2>
-      <p>
-        RAW BEAST ist kein 0815-Energy. 20g hochwertiges Protein und 200mg Koffein pro Dose pushen dich über deine Limits hinaus. Fruchtig. Brutal. Effektiv.
-      </p>
-      <p>
-        Geschmack: **Kokos-Zitrus** – erfrischend anders, kompromisslos hart.
-        Entwickelt für Athleten, die mehr erwarten. Für dich.
-      </p>
-    </div>
-  </section>
-
-  <div class="cta">
-    <button>Jetzt vorbestellen</button>
-  </div>
-
-  <footer>
-    &copy; 2025 RAW BEAST. All rights reserved. Made for the gym – not for the weak.
-  </footer>
-</body>
-</html>
--radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    section {
-      padding: 5rem 2rem;
-      text-align: center;
-      transform: translateY(50px);
-      opacity: 0;
-      transition: all 1s ease;
-    }
-    section.visible {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #333;
-    }
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 0.7;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="RAW BEAST Logo" class="logo" />
-    <h1>RAW BEAST</h1>
-    <p>Power. Fokus. Keine Kompromisse.</p>
-  </header>
-
-  <div class="coming-soon">🚧 COMING SOON 🚧</div>
-
-  <section id="info">
-    <h2>UNLEASH THE BEAST</h2>
-    <p>Ein revolutionärer Energy Drink mit 20g Protein und 200mg Koffein. Für Athleten. Für echte Beasts.</p>
-  </section>
-
-  <section id="email">
-    <div class="email-signup">
-      <h3>Trag dich ein und bleib informiert</h3>
-      <form action="mailto:info@rawbeast.de" method="POST" enctype="text/plain">
-        <input type="email" name="email" placeholder="Deine E-Mail" required />
-        <button type="submit">Benachrichtigen</button>
-      </form>
+  <section class="scroll-section">
+    <h2>Trag dich ein und sei der Erste.</h2>
+    <form class="newsletter" action="mailto:info@rawbeast.de" method="POST" enctype="text/plain">
+      <input type="email" name="email" placeholder="Deine E-Mail" required />
+      <button type="submit">Benachrichtige mich</button>
+    </form>
+    <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-youtube"></i>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 RAW BEAST – Design & Power by RAW BEAST ENERGY
+    &copy; 2025 RAW BEAST – powered by RawBeastEnergy
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
