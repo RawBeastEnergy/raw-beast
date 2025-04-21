@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAW BEAST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="RAW BEAST Logo" class="logo" />
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <h1>Bereit für das Beast?</h1>
+      <img src="can.png" alt="RAW BEAST Dose" class="can" />
+    </section>
+
+    <section class="newsletter fade-in">
+      <h2>Trag dich ein für den Launch!</h2>
+      <form>
+        <input type="email" placeholder="Deine E-Mail" required />
+        <button type="submit">Benachrichtige mich</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© RAW BEAST 2025</p>
+    <div class="socials">
+      <span>🔗</span>
+      <span>🔗</span>
+      <span>🔗</span>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
