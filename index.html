@@ -2,121 +2,108 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAW BEAST | COMING SOON</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAW BEAST – Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: 'Anton', sans-serif;
-      background: #111;
-      color: #f1f1f1;
-      overflow-x: hidden;
-    }
+        body {
+            font-family: 'Anton', sans-serif;
+            color: white;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden;
+        }
 
-    header {
-      height: 100vh;
-      background: url('bg.jpg') no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
+        header img {
+            max-width: 250px;
+            margin-bottom: 2rem;
+            animation: fadeInDown 2s ease-out;
+        }
 
-    header h1 {
-      font-size: 4rem;
-      font-weight: 900;
-      color: #fff;
-      text-shadow: 2px 2px 10px #000;
-      animation: pulse 2s infinite;
-    }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
 
-    header p {
-      font-size: 1.5rem;
-      color: #ccc;
-      margin-top: 1rem;
-    }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
 
-    section {
-      padding: 4rem 2rem;
-      text-align: center;
-      transition: all 1s ease;
-    }
+        .newsletter {
+            margin-top: 2rem;
+        }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #333;
-    }
+        .newsletter input[type="email"] {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
 
-    form input[type="email"] {
-      padding: 0.8rem;
-      width: 300px;
-      max-width: 80%;
-      border: none;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
+        .newsletter button {
+            padding: 0.5rem 1.5rem;
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
 
-    form button {
-      padding: 0.8rem 1.5rem;
-      background: #fff;
-      color: #111;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+        .newsletter button:hover {
+            background: #e6b800;
+        }
 
-    form button:hover {
-      background: #ccc;
-    }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
 
-    .logo {
-      width: 150px;
-      margin-bottom: 1.5rem;
-    }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 0.7;
-      }
-    }
-  </style>
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="RAW BEAST Logo" class="logo" />
-    <h1>COMING SOON</h1>
-    <p>BEREIT FÜR DAS BEAST?</p>
-  </header>
-
-  <section>
-    <h2>Trag dich ein und bleib auf dem Laufenden</h2>
-    <form>
-      <input type="email" placeholder="Deine E-Mail-Adresse" required />
-      <button type="submit">Abschicken</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 RAW BEAST – Design by RAW BEAST
-  </footer>
+    <header>
+        <img src="logo.png" alt="RAW BEAST Logo">
+        <h1>BEREIT FÜR DAS BEAST?</h1>
+        <p>COMING SOON</p>
+    </header>
+    <div class="newsletter">
+        <form>
+            <input type="email" placeholder="E-Mail eintragen" required>
+            <button type="submit">Benachrichtige mich</button>
+        </form>
+    </div>
+    <footer>&copy; 2025 RAW BEAST</footer>
 </body>
 </html>
