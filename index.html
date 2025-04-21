@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -16,32 +15,23 @@
     body {
       font-family: 'Orbitron', sans-serif;
       background: linear-gradient(160deg, #0a0a0a 0%, #1b1b1b 100%);
-      color: #e0e0e0;
+      color: #f8f8f8;
       line-height: 1.6;
       overflow-x: hidden;
     }
-    .coming-soon {
-      background-color: #ffc400;
-      color: #000;
-      text-align: center;
-      padding: 1rem;
-      font-size: 1.4rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
     header {
       text-align: center;
-      padding: 4rem 2rem 2rem;
+      padding: 5rem 2rem 3rem;
       background: radial-gradient(circle, #111 20%, #000 100%);
       border-bottom: 3px solid #ffc400;
     }
     header h1 {
-      font-size: 3.2rem;
+      font-size: 3.5rem;
       color: #ffc400;
       letter-spacing: 4px;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #ccc;
       margin-top: 1rem;
     }
@@ -63,14 +53,33 @@
       max-width: 600px;
     }
     .text-content h2 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
       color: #fff;
     }
     .text-content p {
-      font-size: 1.05rem;
-      color: #ccc;
-      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #bbb;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem auto 5rem;
+    }
+    .cta button {
+      background-color: #ffc400;
+      color: #000;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 196, 0, 0.4);
+    }
+    .cta button:hover {
+      background-color: #fff000;
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
@@ -88,7 +97,7 @@
         flex-direction: column;
       }
       header h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
       .text-content h2 {
         font-size: 2rem;
@@ -97,8 +106,6 @@
   </style>
 </head>
 <body>
-  <div class="coming-soon">COMING SOON – Der Beast ist bald los!</div>
-
   <header>
     <h1>RAW BEAST</h1>
     <p>Die ultimative Kombination aus Power, Geschmack & Fokus – für echte Lifter gemacht.</p>
@@ -112,14 +119,96 @@
         RAW BEAST ist kein 0815-Energy. 20g hochwertiges Protein und 200mg Koffein pro Dose pushen dich über deine Limits hinaus. Fruchtig. Brutal. Effektiv.
       </p>
       <p>
-        Geschmack: <strong>Kokos-Zitrus</strong> – erfrischend anders, kompromisslos hart.
+        Geschmack: **Kokos-Zitrus** – erfrischend anders, kompromisslos hart.
         Entwickelt für Athleten, die mehr erwarten. Für dich.
       </p>
     </div>
   </section>
 
+  <div class="cta">
+    <button>Jetzt vorbestellen</button>
+  </div>
+
   <footer>
     &copy; 2025 RAW BEAST. All rights reserved. Made for the gym – not for the weak.
   </footer>
+</body>
+</html>
+-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 5rem 2rem;
+      text-align: center;
+      transform: translateY(50px);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+    section.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="RAW BEAST Logo" class="logo" />
+    <h1>RAW BEAST</h1>
+    <p>Power. Fokus. Keine Kompromisse.</p>
+  </header>
+
+  <div class="coming-soon">🚧 COMING SOON 🚧</div>
+
+  <section id="info">
+    <h2>UNLEASH THE BEAST</h2>
+    <p>Ein revolutionärer Energy Drink mit 20g Protein und 200mg Koffein. Für Athleten. Für echte Beasts.</p>
+  </section>
+
+  <section id="email">
+    <div class="email-signup">
+      <h3>Trag dich ein und bleib informiert</h3>
+      <form action="mailto:info@rawbeast.de" method="POST" enctype="text/plain">
+        <input type="email" name="email" placeholder="Deine E-Mail" required />
+        <button type="submit">Benachrichtigen</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 RAW BEAST – Design & Power by RAW BEAST ENERGY
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
