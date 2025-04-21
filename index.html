@@ -4,47 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RAW BEAST – Coming Soon</title>
+  <title>RAW BEAST</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
-  <script>
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('section').forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          section.classList.add('visible');
-        }
-      });
-    });
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>RAW BEAST</h1>
-    <p>Bereit für das BEAST?</p>
+    <h1 class="hero-title">RAW BEAST</h1>
+    <p class="subtitle">20g Protein • 200mg Koffein</p>
   </header>
 
-  <section class="main-section">
-    <img src="can.png" alt="RAW BEAST Dose" class="can" />
-    <div class="description">
-      <h2>20g Protein – 200mg Koffein</h2>
-      <p>Maximale Power. Ultimativer Fokus. Der Energy-Drink für echte Athleten.</p>
+  <main>
+    <div class="can-wrapper">
+      <img src="can.png" alt="RAW BEAST Dose" class="can" />
     </div>
-  </section>
-
-  <section class="newsletter">
-    <h3>Trag dich ein & erfahre den Launch zuerst</h3>
-    <form action="mailto:info@rawbeast.de" method="post" enctype="text/plain">
-      <input type="email" placeholder="Deine E-Mail" required />
-      <button type="submit">Benachrichtige mich</button>
-    </form>
-  </section>
+  </main>
 
   <footer>
-    <div class="social-icons">
-      <span>🔗</span> <span>📷</span> <span>🐦</span> <span>▶️</span>
-    </div>
-    <p>&copy; 2025 RAW BEAST. All rights reserved.</p>
+    <p>&copy; 2025 RAW BEAST</p>
   </footer>
 </body>
 </html>
