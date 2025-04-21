@@ -3,127 +3,120 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RAW BEAST – Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAW BEAST | COMING SOON</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
+
     body {
-      font-family: 'Rajdhani', sans-serif;
-      background: url('https://www.toptal.com/designers/subtlepatterns/uploads/marble.png') repeat;
+      font-family: 'Anton', sans-serif;
+      background: #111;
       color: #f1f1f1;
       overflow-x: hidden;
     }
+
     header {
+      height: 100vh;
+      background: url('bg.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 4rem 2rem 2rem;
+      padding: 2rem;
     }
-    header img {
-      max-width: 200px;
-    }
-    h1 {
+
+    header h1 {
       font-size: 4rem;
-      color: #ffc400;
-      text-shadow: 2px 2px 10px black;
-      margin-top: 1rem;
-    }
-    .subline {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      color: #ccc;
-    }
-    .scroll-section {
-      text-align: center;
-      padding: 4rem 2rem;
-      animation: fadeInUp 2s ease-in-out;
-    }
-    .scroll-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-weight: 900;
       color: #fff;
+      text-shadow: 2px 2px 10px #000;
+      animation: pulse 2s infinite;
     }
-    .newsletter {
-      margin-top: 2rem;
+
+    header p {
+      font-size: 1.5rem;
+      color: #ccc;
+      margin-top: 1rem;
     }
-    input[type="email"] {
-      padding: 0.8rem;
-      width: 250px;
-      border: none;
-      border-radius: 8px;
-      margin-right: 0.5rem;
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+      transition: all 1s ease;
     }
-    button {
-      padding: 0.8rem 1.5rem;
-      background: #ffc400;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background: #e0b100;
-    }
-    .social-icons {
-      margin-top: 3rem;
-      font-size: 1.8rem;
-    }
-    .social-icons i {
-      margin: 0 1rem;
-      color: #aaa;
-      transition: color 0.3s;
-    }
-    .social-icons i:hover {
-      color: #ffc400;
-    }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
       color: #888;
+      border-top: 1px solid #333;
     }
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(50px); }
-      100% { opacity: 1; transform: translateY(0); }
+
+    form input[type="email"] {
+      padding: 0.8rem;
+      width: 300px;
+      max-width: 80%;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
     }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
+
+    form button {
+      padding: 0.8rem 1.5rem;
+      background: #fff;
+      color: #111;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #ccc;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
       }
-      .scroll-section h2 {
-        font-size: 2rem;
+      50% {
+        transform: scale(1.05);
+        opacity: 0.7;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="RAW BEAST Logo" />
+    <img src="logo.png" alt="RAW BEAST Logo" class="logo" />
     <h1>COMING SOON</h1>
-    <p class="subline">Bereit für das BEAST?</p>
+    <p>BEREIT FÜR DAS BEAST?</p>
   </header>
 
-  <section class="scroll-section">
-    <h2>Trag dich ein und sei der Erste.</h2>
-    <form class="newsletter" action="mailto:info@rawbeast.de" method="POST" enctype="text/plain">
-      <input type="email" name="email" placeholder="Deine E-Mail" required />
-      <button type="submit">Benachrichtige mich</button>
+  <section>
+    <h2>Trag dich ein und bleib auf dem Laufenden</h2>
+    <form>
+      <input type="email" placeholder="Deine E-Mail-Adresse" required />
+      <button type="submit">Abschicken</button>
     </form>
-    <div class="social-icons">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-tiktok"></i>
-      <i class="fab fa-youtube"></i>
-    </div>
   </section>
 
   <footer>
-    &copy; 2025 RAW BEAST – powered by RawBeastEnergy
+    &copy; 2025 RAW BEAST – Design by RAW BEAST
   </footer>
 </body>
 </html>
